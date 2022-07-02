@@ -19,11 +19,10 @@ body{
 }
 
 .flex-container{
-    margin: 30px;
+    margin: 10px;
     display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-   
+    flex-wrap: wrap;
+    flex-direction: row; 
 }
 
 .flex-items {
@@ -34,14 +33,14 @@ body{
     margin-left: 20px;
 }
 
-.textarea{
-    width: 576px;
-    height: 167px;
+#textarea-box{
+    overflow: hidden;
+    width: 279px;
+    height: 82px;
     text-align: center;
-    padding: 1rem;
+    padding: 70px 167px;
     align-items: center;
     justify-content: center;
-
 }
 
 .center{
@@ -49,20 +48,30 @@ body{
     margin: auto;
 }
 
-.btn{
-    background-color: #FCD34D;
-    border: 2px solid red;
-    padding: 12px 37px;
-    margin-top: 7px;
+#btn{
+    background-color: yellow;
+    font-weight: 700;
+    font-size: large;
+    padding: 7px 29px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    margin-top: 3px;
 }
+
+#output{
+    box-sizing: border-box;
+    width: 99%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow: scroll;
+    border: 1px solid black;
+}
+
 footer{
     background-color: #FCD34D;
     text-align: center;
     text-decoration: none;
-    padding: 2rem;
-    
-   
-   
+    padding: 1.1rem;
 }
 
 footer ul li {
@@ -76,11 +85,8 @@ footer ul li {
 
 .list-inline{
     display: inline;
-    text-align: center;
-   
-    
+    text-align: center;  
 }
-
 
 footer p {
     font-weight: bold;

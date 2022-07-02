@@ -2,8 +2,8 @@ var btnTranslate = document.querySelector("#btn")
 var textInput = document.querySelector("#textarea-box")
 var showOutput = document.querySelector("#output")
 
-// var serverUrl = " https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?"
-var serverUrl ="https://api.funtranslations.com/translate/minion.json"
+var serverUrl = " https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?"
+// var serverUrl ="https://api.funtranslations.com/translate/minion.json"
 
 function getTranslationUrl(text) {
     return serverUrl + "?" + "text=" + text
@@ -17,14 +17,15 @@ btn.addEventListener('click' , clickEventHandler)
 
 
 function clickEventHandler () {
-var input = textInput.value
+var inputTxt = textInput.value
+console.log(inputTxt)
 
-fetch(getTranslationUrl(input))
+fetch(getTranslationUrl(inputTxt))
 .then(response => response.json())
-.then(json => {
-    var translatedText = json.contents.translated
+.then(json =>{var translatedText = json.contents.translated
     showOutput.innerText = translatedText}
     )
+    
 
 .catch(errorHandler)
 }

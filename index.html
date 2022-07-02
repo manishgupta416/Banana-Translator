@@ -5,15 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Translator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Banana Translator</h2>
-    <textarea name="" id="textarea-box" cols="30" rows="10"></textarea>
-    
-    <button id="btn">Click Me</button>
-    <div id="output"></div>
+    <nav class="nav">
+        <h1>Banana Translator</h1>
+    </nav>
 
+    <div class="flex-container">
+        <div class="flex-items">
+           <img class="img" src="/minion.jpg" alt="image">
+        </div>
+
+        <div class="flex-items ">
+            <div class="box">
+        
+            <textarea id="textarea-box" placeholder="Please type in your text here so that our Minion Speak translator can do the magic and convert it to Minions Speak..." ></textarea>
+            <div class="center">
+
+           
+            <button id="btn">Translate</button>
+            <p>Translation comes here 👇 👇 </p>
+            <div id="output"> </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Connect with Me</p>
+        <ul class="list-inline">
+            <li class="list-inline"><a href="/">Github</a></li>
+            <li class="list-inline"><a href="/">LinkedIn</a></li>
+            <li class="list-inline"><a href="/">Twitter</a></li>
+        </ul>
+    </footer>
 
     <script src="./app.js"></script>
 </body>
 </html>
+
