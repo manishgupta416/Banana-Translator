@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    color: #261197;
 }
 
 .nav {
@@ -16,6 +17,19 @@ body{
 
 .img{
     width: 100%;
+}
+a , .footer-heading , .heading{
+    font-size: larger;
+    font-weight: bolder;
+    color: #3000ff;
+}
+
+a:hover , #btn:hover{
+    background-color: #261197;
+    color: #fcd34d;
+    border-radius: 17px;
+    border: 2px solid;
+    padding: 10px 20px;
 }
 
 .flex-container{
@@ -50,6 +64,7 @@ body{
 
 #btn{
     background-color: yellow;
+    color: #261197;
     font-weight: 700;
     font-size: large;
     padding: 7px 29px;
