@@ -7,15 +7,15 @@ font-size: large;
 font-weight: bold;
 color: white;`
 
-
-var serverUrl = " https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
-// var serverUrl ="https://api.funtranslations.com/translate/minion.json"
+var serverUrl ="https://api.funtranslations.com/translate/minion.json"
 
 function getTranslationUrl(text) {
     return serverUrl + "?" + "text=" + text
+    
 }
 
 function errorHandler(error) {
+alert("something went wrong please try again later" , error)
 console.log("error occured" , error)
 }
 
